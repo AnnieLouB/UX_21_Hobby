@@ -1,0 +1,157 @@
+
+body {
+    background-color:whitesmoke;
+}
+
+h1 {
+    padding-left: 50px;
+    padding-top: 50px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 350;
+    font-size: 77px;
+    color: #2E4159;
+    margin-bottom: 0px;
+}
+
+h2 {
+    padding-left: 50px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 275;
+    font-size: 43px;
+    color: #2E4159;
+}
+
+h3 {
+    padding-left: 50px;
+    padding-right: 0px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 575;
+    font-size: 40px;
+    color: #2E4159;
+}
+
+
+h5 {
+    padding-left: 50px;
+    padding-right: 0px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 275;
+    font-size: 30px;
+    color: #2E4159;
+}
+
+a:hover {
+    color: navy !important;
+}
+
+ul {
+    font-size: 18px;
+    color: #2E4159;
+    list-style-type: none;
+    padding: 10;
+    margin: 10;
+}
+
+a {
+    color: #2E4159;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+a:hover {
+    color:rosybrown!important;
+}
+
+.navbar {
+    background-color: #F9F5EB !important;
+    border-bottom: rosybrown 9px !important;
+}
+.bg-light {
+    background-color:F9F5EB;
+    /* background: transparent !important; */
+    /* background-image: url(../images/nav-bg-transparency.png); */
+}
+
+
+.navbar-brand img {
+    width: 200px;
+}
+
+
+
+
+.navbar-nav {
+    padding-left: 150px;
+}
+
+
+.heroGrid {
+    height: 1100px;
+    grid-template-columns: 1fr 340px 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "  heroStatement heroImage  ";
+}
+
+
+#heroStatement { 
+    grid-area: heroStatement;
+    grid-column-start: 2;
+    margin-right: 64px;
+}
+
+
+#heroImage img {
+    grid-area: heroImage;
+    padding-left: 50px;
+    padding-bottom: 0px;
+    padding-top:30px;
+}
+
+ .fitting-image {
+    width: 1400px;
+    height: 900px;
+    object-fit: 201 px by 300 px;
+}
+    
+
+ .container-fluid{
+    border-bottom: 5px solid rosybrown;
+}
+
+#examples{
+    padding: 0px 5% 35px;
+}
+
+#examplesContainer {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+    "examplesHeader examplesHeader"
+    "exampleTitle exampleImage"
+    "exampleDescription exampleImage";
+}
+
+#examplesHeader {
+    grid-area: examplesHeader;
+    padding-top: 0px; 
+
+    
+}
+
+#exampleTitle {
+    grid-area: exampleTitle;
+    padding-top: 40px;
+}
+
+#exampleDescription {
+    grid-area: exampleDescription;
+    padding-bottom: 25px;
+
+}
+
+#exampleImage {
+    grid-area: exampleImage;
+    padding-left:50px;
+}
